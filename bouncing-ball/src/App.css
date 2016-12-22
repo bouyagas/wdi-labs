@@ -1,0 +1,8 @@
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  widows: 100vw;
+  height: 100vh;
+}

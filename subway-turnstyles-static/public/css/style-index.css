@@ -1,0 +1,85 @@
+
+/*Grace stuff
+===================================================================
+*/
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #59d1f3;
+/*  font-family: 'Teko', sans-serif;
+  font-family: 'Abel', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sun {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 940px;
+  padding: 0;
+  z-index: -1;
+  animation: sunmovement 2s ease-out;
+}
+@keyframes sunmovement{
+  0% { margin-top: -100px; margin-left: 470px; opacity: 0;}
+  100% { margin-top: 0px; margin-left: 940px; opacity: 100%;}
+}
+
+
+.modal1 {
+  display: block;
+}
+
+.welcome {
+  margin-top: 150px;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: 'Teko', sans-serif;
+  font-size: 200px;
+  letter-spacing: 2px;
+  text-align: center;
+  animation: welcome 2s ease-in;
+}
+@keyframes welcome{
+  0% { letter-spacing: -10px; opacity: 0; }
+  70% { letter-spacing: 15px; opacity: 80%; }
+  100% { letter-spacing: 2px; opacity: 100%; }
+}
+
+.wel-button {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 5px;
+  font-size: 18px;
+  background-color: #59d1f3;
+  animation: but 2s ease-in;
+}
+@keyframes but{
+  0% { opacity: 0; }
+  100% { opacity: 100%; }
+}
+
+.wel-button:hover {
+  background-color: #26c6f2;
+}
+
+.to-form {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+

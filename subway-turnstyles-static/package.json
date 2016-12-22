@@ -1,0 +1,27 @@
+{
+  "name": "subway-turnstyles-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottdmccord/subway-turnstyles-static.git"
+  },
+  "author": "GA WDI and DSI group",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottdmccord/subway-turnstyles-static/issues"
+  },
+  "homepage": "https://github.com/scottdmccord/subway-turnstyles-static#readme",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "node-fetch": "^1.6.3",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,14 @@
+.firehouse-item {
+  margin: 2vh 2vw;
+  height: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firehouse-item img {
+  max-height: 100%;
+  width: auto;
+  display: inline-block;
+}

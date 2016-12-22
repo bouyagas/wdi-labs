@@ -1,0 +1,6 @@
+.list-container {
+  height: 80%;
+  width: 30%;
+  overflow: scroll;
+  background-color: black;
+}

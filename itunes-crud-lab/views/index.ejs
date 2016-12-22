@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Itune App</title>
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <form action="/search" method="post">
+    <input type="text" name="term" placeholder="Search for Music">
+    <input type="submit" value="Search">
+  </form>
+  <div class="favorites-container">
+  <h1>Favorites</h1>
+    <h3><%= favorites.length %> Favorites </h3>
+    <ul class="favorites-list">
+    <%# Saved music will be displayed here%>
+    <% favorites.forEach( artist => { %>
+      <li class="favorite-item">
+        <div>
+          <h3><%= artist.artistName %></h3>
+          <p><%= artist.collectionName %></p>
+          <img src="<%= artist.artwork %>" alt="<%= artist.collectionName %>">
+          <form class="delete-favorite" action="/favorites/<%= artist._id %>?_method=DELETE" method="post">
+            <input type="submit" value="Delete">
+          </form>
+        </div>
+      </li>
+    <% }) %>
+  </div>
+
+  <div id="search-results">
+    <h1>Search Results</h1>
+    <% music.forEach( artist => { %>
+      <div class="music-result">
+        <h3><%= artist.artistName %></h3>
+        <p><%= artist.collectionName %></p>
+        <img src="<%= artist.artworkUrl100 %>" alt="<%= artist.collectionName %>">
+        <form class="save-favorite" action="/favorites" method="POST">
+          <input type="hidden" name="favorite[artistName]" value="<%= artist.artistName %>">
+          <input type="hidden" name="favorite[collectionName]" value="<%= artist.collectionName %>">
+          <input type="hidden" name="favorite[artwork]" value="<%= artist.artworkUrl100 %>">
+          <input type="submit" value="Save to Favorites">
+        </form>
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html>

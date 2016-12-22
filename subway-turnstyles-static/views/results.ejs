@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/css/results.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans|Teko" rel="stylesheet">
+  <title>Results</title>
+</head>
+<body>
+  <header>
+    <h1>NYC Subway Traffic</h1>
+  </header>
+
+  <div class="results-container">
+    <div class="results-word">
+    <% result = 5 %>
+    <% if (result === 1) { %>
+      <h2 id='super-light'>Traffic is predicted to be <span>SUPER LIGHT</span></h2>
+      <h3>It’s nearly empty, commute in comfort.</h3>
+    <% } else if (result === 2) { %>
+      <h2 id="light">Traffic is predicted to be <span>LIGHT</span></h2>
+      <h3>You still might get a seat.</h3>
+    <% } else if (result === 3) { %>
+      <h2 id="medium">Traffic is predicted to be <span>MEDIUM</span></h2>
+      <h3>You can still ride the L train.</h3>
+    <% } else if (result === 4) { %>
+      <h2 id="heavy">Traffic is predicted to be <span>HEAVY</span></h2>
+      <h3>Wedge yourself through that door.</h3>
+    <% } else if (result === 5) { %>
+      <h2 id="super-heavy">Traffic is predicted to be <span>SUPER HEAVY</span></h2>
+      <h3>Be prepared to wait for 5 trains to go by.</h3>
+    <% } %>
+    </div>
+
+    <div class="results-images">
+      <div class="subway-car">
+        <img src="/images/subway-car.jpg" alt="subway car">
+      </div>
+
+      <div class="rider-container">
+        <% if (result === 1) { %>
+          <img src="" alt="riders" class="div1">
+        <% } else if (result === 2) { %>
+          <img src="" alt="riders" class="div1">
+          <img src="" alt="riders" class="div2">
+          <img src="" alt="riders" class="div3">
+        <% } else if (result === 3) { %>
+          <img src="" alt="riders" class="div1">
+          <img src="" alt="riders" class="div2">
+          <img src="" alt="riders" class="div3">
+          <img src="" alt="riders" class="div4">
+          <img src="" alt="riders" class="div5">
+        <% } else if (result === 4) { %>
+        <div class="heaviest">
+          <div class="heavy-rider-container">
+            <img src="" alt="riders" class="div1">
+            <img src="" alt="riders" class="div2">
+            <img src="" alt="riders" class="div3">
+            <img src="" alt="riders" class="div4">
+          </div>
+          <div class="heavy-rider-container">
+            <img src="" alt="riders" class="div5">
+            <img src="" alt="riders" class="div6">
+            <img src="" alt="riders" class="div7">
+            <img src="" alt="riders" class="div8">
+            <img src="" alt="riders" class="div9">
+          </div>
+        </div>
+        <% } else if (result === 5) { %>
+          <div class="heaviest">
+            <div class='heavy-rider-container so-many'>
+              <img src="" alt="riders" class="div1">
+              <img src="" alt="riders" class="div2">
+              <img src="" alt="riders" class="div3">
+              <img src="" alt="riders" class="div4">
+              <img src="" alt="riders" class="div5">
+            </div>
+            <div class="heavy-rider-container so-many">
+              <img src="" alt="riders" class="div6">
+              <img src="" alt="riders" class="div7">
+              <img src="" alt="riders" class="div8">
+              <img src="" alt="riders" class="div9">
+              <img src="" alt="riders" class="div10">
+              <img src="" alt="riders" class="div11">
+              <img src="" alt="riders" class="div12">
+            </div>
+            <div class='heavy-rider-container so-many'>
+              <img src="" alt="riders" class="div13">
+              <img src="" alt="riders" class="div14">
+              <img src="" alt="riders" class="div15">
+              <img src="" alt="riders" class="div16">
+              <img src="" alt="riders" class="div17">
+              <img src="" alt="riders" class="div18">
+            </div>
+          </div>
+        <% } %>
+      </div>
+    </div>
+
+  </div>
+  <script src="/js/javascript.js"></script>
+</body>
+</html>

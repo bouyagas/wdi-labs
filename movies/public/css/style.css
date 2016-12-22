@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #2C5B74;
+  display: flex;
+  justify-content: center;
+  color: white;
+  display: absolute;
+  flex-direction: column;
+  align-items: center;
+  font-family: helvetica;
+  font-size: 20px;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+header button {
+  width: 50%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}

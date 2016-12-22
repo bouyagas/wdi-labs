@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #59d1f3;
+/*  font-family: 'Teko', sans-serif;
+  font-family: 'Abel', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+header h1 {
+  margin: 0;
+  padding-top: 40px;
+  font-family: 'Teko', sans-serif;
+  font-size: 100px;
+  letter-spacing: 2px;
+  text-align: center
+}
+
+.results-word {
+  text-align: center;
+  font-size: 20px;
+}
+
+#super-light span {
+  color: green;
+  text-shadow: 0 1px 1px black;
+}
+
+#light span {
+  color: lawngreen;
+  text-shadow: 0 1px 1px black;
+}
+
+#medium span {
+  color: gold;
+  text-shadow: 0 1px 1px black;
+}
+
+#heavy span {
+  color: darkorange;
+  text-shadow: 0 1px 1px black;
+}
+
+#super-heavy span {
+  color: firebrick;
+  text-shadow: 0 1px 1px black;
+}
+
+.results-images {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.subway-car {
+  width: 40%;
+  height: 80%;
+}
+
+.subway-car img {
+  width: 550px;
+  height: 100%;
+}
+
+.rider-container {
+  width: 900px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+/*.riders {
+  width: 900px;
+  border: 1px solid black;
+  height: 150px;
+  margin-left: -5%;
+  margin-top: 0px;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+}*/
+
+.rider-container img {
+  width: 115px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+.heaviest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heavy-rider-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.so-many {
+  margin-top: -10px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+

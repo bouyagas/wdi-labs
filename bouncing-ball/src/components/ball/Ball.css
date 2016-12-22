@@ -1,0 +1,21 @@
+.ball-holder {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ball-holder img {
+  width: 100px;
+  -webkit-animation: bounce 1.5s infinite ease-out; /* Safari 4.0 - 8.0 */
+  animation: bounce 1.5s infinite ease-out;
+}
+
+
+@keyframes bounce {
+    0% {margin-bottom: 0;}
+    60% {margin-bottom: 300px;}
+    65% {margin-bottom: 290px;}
+    100% {margin-bottom: 0;}
+}

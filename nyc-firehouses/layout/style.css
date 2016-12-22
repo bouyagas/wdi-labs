@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.main-firehouse {
+  height: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  height: 10vh;
+  background-color: #ee;
+}
+
+main {
+  height: 83vh;
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.show-container {
+  height: 80%;
+  width: 50%;
+  background-color: lightgrey;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.list-container {
+  height: 80%;
+  width: 30%;
+  overflow: scroll;
+  background-color: black;
+}
+
+.list-item-details {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.firehouse-item {
+  margin: 2vh 2vw;
+  height: 20%;
+  background-color: white;
+}
+
+.firehouse-item img {
+  max-height: 100%;
+  width: auto;
+  display: inline-block;
+}
+
+footer {
+  height: 7vh;
+  background-color: lightgrey;
+}
